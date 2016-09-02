@@ -1,0 +1,11 @@
+<h1>LINKBORED</h1>
+<p>It's a website for links</p>
+<a href='/login'> log in </a>
+<a href='/logout'> log off </a>
+<a href='/newpost'> make a new post</a>
+
+<% @posts.each do |post| %>
+<h3><%= post.title %></h3>
+<a href="<%= post.link %>"><%= post.link %></a>
+<p><%= post.description %></p>
+<% end %> 

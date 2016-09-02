@@ -1,0 +1,8 @@
+<h1>shitpost to your heart's content</h1>
+
+<%= form_for :post do |f| %>
+  <%= f.text_field :title, placeholder: "Title your post" %>
+  <%= f.text_field :link, placeholder: "Enter your link" %>
+  <%= f.text_area :description, placeholder: "Enter a descripton" %>
+  <%= f.submit "Post It" %>
+<% end %>
